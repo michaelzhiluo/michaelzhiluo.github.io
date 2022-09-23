@@ -20,10 +20,10 @@
               <p style="text-align:center">
                 <name>Michael Luo</name>
               </p>
-              <p>I am a 5th year Masters student (2020-2021) in the <a href="https://eecs.berkeley.edu/">UC Berkeley EECS</a> department studying Artificial Intelligence, Systems, and Robotics. I am advised by <a href="https://people.eecs.berkeley.edu/~istoica/">Prof. Ion Stoica</a> and am associated with <a href="https://eecs.berkeley.edu/">Berkeley Artificial Intelligence Research</a> (BAIR) and <a href="https://rise.cs.berkeley.edu/">RISELab</a>. I have also recently done research under <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a> in <a href="http://autolab.berkeley.edu/">AUTOLab</a>.  
+              <p>I am a PhD student (2021+) in the <a href="https://eecs.berkeley.edu/">UC Berkeley EECS</a> department advised by <a href="https://people.eecs.berkeley.edu/~istoica/">Prof. Ion Stoica</a>.  My research interests are in Artificial Intelligence and Systems. I am associated with  <a href="https://sky.cs.berkeley.edu//">SkyLab</a> and <a href="https://eecs.berkeley.edu/">Berkeley Artificial Intelligence Research</a> (BAIR).
               </p>
               <p>
-                Before the Masters program, I earned my B.S. from UC Berkeley with a double major in <a href="https://eecs.berkeley.edu/">EECS</a> and <a href="https://haas.berkeley.edu/">Business Administration</a>. Outside of school, I contribute to a popular distributed RL library <a href="https://github.com/ray-project/ray/tree/master/rllib">Ray/RLlib</a> with over 14k stars on Github. In my free time, I enjoy a mix of hobbies, which include powerlifting, playing the piano, and competitive programming.
+                Before that, I earned my M.S. in <a href="https://eecs.berkeley.edu/">EECS</a> under Ion Stoica and <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a> in <a href="http://autolab.berkeley.edu/">AUTOLab</a>. I also earned a B.S. from UC Berkeley with a double major in EECS and <a href="https://haas.berkeley.edu/">Business Administration</a> in 2020.
               </p>
               <p style="text-align:center">
                 <a href="mailto:michael.luo@berkeley.edu">Email</a> &nbsp/&nbsp
@@ -43,13 +43,72 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My masters's and undergraduate research focuses on practical problems that RL faces in real life. This includes scaling up data collection with distributed RL, learning safely with safe RL, and adapting quickly to real-life enviornments with meta RL. I am also interested in applying RL to beat existing algorithms and models in niche fields, such as NLP, query optimization for databases, and video streaming.
+                Currently, my research involves building scalable systems for ML pracitioners that will fulfill the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">Sky Computing vision</a>. We are <a href="https://github.com/skypilot-org/skypilot">open source</a>. This research involves virtualizing GPUs to scale DL training to trillions of parameters and designing learnable scheduling policies for migrating jobs across different and regions clouds (incl. on-premise).
+              </p>
+              <p>
+                Previously,my masters's and undergraduate research primarily focused on practical problems and applications for reinforcment learning (RL), including NLP, query optimization for databases, and video streaming.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/balsa.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/1912.00167">
+                  <papertitle>Balsa: Learning a Query Optimizer Without Expert Demonstrations</papertitle>
+                </a>
+                <br>
+                Zongheng Yang,
+                Wei-lin Chiang,
+                Frank Luan,
+                Gautam Mittal,
+                <strong>Michael Luo</strong>,
+                Ion Stoica
+                <br>
+                <em>Special Interest Group on Management of Data (<strong>SIGMOD</strong>), 2022</em> 
+                <br>
+                <a href="https://arxiv.org/abs/2201.01441">Arxiv</a> |
+                <a href="https://speakerdeck.com/zongheng/balsa-learning-a-query-optimizer-without-expert-demonstrations">Video</a> |
+                <a href="https://github.com/balsa-project/balsa">Code</a>
+                <p></p>
+                <p> An end2end query optimizer trained via deep RL that exceeds the query-performance of expert solvers by up to 2.8x.
+                </p>
+              </td>
+          </tr> 
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/mesa.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/safe-meta-rl/home">
+                <papertitle>MESA: Offline Meta-RL for Safe Adaptation and Fault Tolerance</papertitle>
+              </a>
+              <br>
+              <strong>Michael Luo</strong>,
+              Ashwin Balakrishna,
+              Brijen Thananjeyan,
+              Suraj Nair,
+              Julian Ibarz,
+              Jie Tan,
+              Chelsea Finn,
+              Ion Stoica,
+              Ken Goldberg
+              <br>
+              <em>Neural Information Processing Systems (<strong>NeurIPS</strong>) Safe Control Workshop, 2021 </em>
+              <br>
+              <a href="https://sites.google.com/view/safe-meta-rl/home">Website</a> |
+              <a href="https://arxiv.org/abs/2112.03575">Arxiv</a> |
+              <a href="https://www.youtube.com/watch?v=lK3w_SoGsyE">Video</a> |
+              <a href="https://github.com/michaelzhiluo/mesa-safe-rl">Code</a>
+              <p></p>
+              <p> Safe RL algorithm that meta-learns from offline datasets to safely adapt to unseen environments.
+              </p>
+            </td>
+          </tr> 
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -67,8 +126,9 @@
               Eric Liang,
               Ion Stoica
               <br>
-              <em>Accepted to International Conference on Learning Representations (ICLR)</em>, 2020  
+              <em>International Conference on Learning Representations (<strong>ICLR</strong>), 2020 </em> 
               <br>
+              <a href="https://docs.ray.io/en/latest/rllib/rllib-algorithms.html#appo">Website</a> |
               <a href="https://arxiv.org/abs/1912.00167">Arxiv</a> |
               <a href="https://iclr.cc/virtual_2020/poster_BJeGlJStPr.html">Video</a> |
               <a href="https://github.com/ray-project/ray/blob/master/rllib/agents/ppo/appo.py">Code</a>
@@ -93,7 +153,7 @@
               Karthik Narasimhan,
               Thomas L. Griffiths
               <br>
-              <em>Under Review at Conference on Artifical Intelligence (AAAI), 2021.</em>
+              <em>Preprint.</em>
               <br>
               <a href="https://arxiv.org/abs/2011.13782">Arxiv</a> |
               <a href="https://github.com/michaelzhiluo/ray/tree/metaworld">Code</a>
@@ -123,11 +183,12 @@
               Chelsea Finn,
               Ken Goldberg
               <br>
-              <em>Accepted to NeurIPS Robot Learning Workshop, 2020.</em>
+              <em>International Conference on Robotics and Automation (<strong>ICRA</strong>), 2021</em>
               <br>
               <a href="https://sites.google.com/berkeley.edu/recovery-rl/">Website</a> |
               <a href="https://arxiv.org/abs/2010.15920">Arxiv</a> |
-              <a href="">Code</a>
+              <a href="https://www.youtube.com/watch?v=XvO8fzRM0LA">Video</a> |
+              <a href="https://github.com/abalakrishna123/recovery-rl">Code</a>
               <br>
               <p></p>
               <p>An algorithm for safe reinforcement learning which utilizes a set of offline data to learn about constraints before policy learning and a pair of policies which separate the often conflicting objectives of task directed exploration and constraint satisfaction to learn contact rich and visuomotor control tasks.</p>
@@ -139,7 +200,7 @@
               <img style="width:105%;max-width:105%" src="images/dataflow.png">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2011.12719">
+              <a href="https://proceedings.neurips.cc/paper/2021/hash/2bce32ed409f5ebcee2a7b417ad9beed-Abstract.html">
                 <papertitle>Distributed Reinforcement Learning is a Dataflow Problem</papertitle>
               </a>
               <br>
@@ -149,10 +210,11 @@
               Sven Mika, 
               Ion Stoica
               <br>
-              <em>Under Review at Machine Learning and Systems (MLSys) 2021.</em>
+              <em>Neural Information Processing Systems (<strong>NeurIPS</strong>), 2021.</em>
               <br>
-              <a href="https://tinyurl.com/distributedrl">Paper</a> |
-              <a href="https://github.com/ray-project/ray/blob/master/rllib/">Code (In RLlib)</a>
+              <a href="https://arxiv.org/abs/2011.12719">Arxiv</a> |
+              <a href="https://slideslive.com/38967764/rllib-flow-distributed-reinforcement-learning-is-a-dataflow-problem?ref=recommended">Video</a> |
+              <a href="https://github.com/ray-project/ray/blob/master/rllib/">Code</a>
               <br>
               <p></p>
               <p>We propose RLFlow, a hybrid actor-dataflow programming model for distributed RL, that leads to highly composable and performant implementations of RL algorithms, which results to faster training and significant code reductions.</p>
@@ -161,11 +223,42 @@
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/impact.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://berkeleyautomation.github.io/rlqp/">
+                <papertitle>Accelerating Quadratic Optimization with Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              Jeffrey Ichnowski,
+              Paras Jain,
+              Bartolomeo Stellato,
+              Goran Banjac,
+              <strong>Michael Luo</strong>,
+              Francesco Borrelli,
+              Joseph E. Gonzalez,
+              Ion Stoica,
+              Ken Goldberg
+              <br>
+              <em>Neural Information Processing Systems (<strong>NeurIPS</strong>), 2021.</em>  
+              <br>
+              <a href="https://berkeleyautomation.github.io/rlqp/">Website</a> |
+              <a href="https://arxiv.org/abs/2107.10847">Arxiv</a> |
+              <a href="https://slideslive.com/38967072/accelerating-quadratic-programming-with-reinforcement-learning?ref=speaker-18771">Video</a> |
+              <a href="https://github.com/BerkeleyAutomation/rlqp">Code</a>
+              <p></p>
+              <p> An intelligent application of RL that tunes the parameters of existing Quadratic Program (QP) solvers and improving solving times by up to 3x.
+              </p>
+            </td>
+          </tr> 
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img style="width:105%;max-width:105%" src="images/voi.png">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=jP1vTH3inC">
-                <papertitle>Discovering Autoregressive Orderings with Variational Inference</papertitle>
+              <a href="https://arxiv.org/abs/2110.15797">
+                <papertitle>Discovering Non-monotonic Autoregressive Orderings with Variational Inference</papertitle>
               </a>
               <br>
               Xuanlin Li*,
@@ -176,9 +269,12 @@
               Sheng Shen,
               Trevor Darrell
               <br>
-              <em>Under Review at International Conference on Learning Representations (ICLR) 2021. (Reviews in Top 7% of Submissions)</em>
+              <em>International Conference on Learning Representations (<strong>ICLR</strong>), 2021.</em>
               <br>
-              <a href="https://openreview.net/forum?id=jP1vTH3inC">Paper</a>
+              <a href="https://iclr-blog-track.github.io/2022/03/25/non-monotonic-autoregressive-ordering/">Website</a> |
+              <a href="https://arxiv.org/abs/2110.15797">Arxiv</a> |
+              <a href="https://slideslive.com/38954040/discovering-nonmonotonic-autoregressive-orderings-with-variational-inference?ref=recommended">Video</a> |
+              <a href="https://github.com/xuanlinli17/autoregressive_inference">Code</a>
               <br>
               <p></p>
               <p>We propose the first domain-independent unsupervised / self-supervised learner that discovers high-quality autoregressive orders through fully-parallelizable end-to-end training without domain-specific tuning.</p>
@@ -203,10 +299,11 @@
               Daniel S. Brown,
               Ken Goldberg
               <br>
-              <em>Under Review at International Conference on Robotics and Automation (ICRA) 2021.</em>
+              <em>Conference on Automation Science and Engineering (<strong>CASE</strong>), 2021.</em>
               <br>
               <a href="https://sites.google.com/view/lazydagger/home">Website</a> |
-              <a href="https://drive.google.com/file/d/1txjQrOjuRQEyu2WOQ1p4PwWiSksG6jBZ/view">Paper</a>
+              <a href="https://arxiv.org/abs/2104.00053">Arxiv</a> |
+              <a href="https://drive.google.com/file/d/1Z39PhREBuoy-I3jStkPZqkpEcVSNhxKx/view">Video</a>
               <br>
               <p></p>
               <p>An algorithm for interactive imitation learning that learns to minimize human context switching through sustained interventions and maintains the same supervisor burden for prior algorithms.</p>
@@ -226,10 +323,10 @@
               <strong>Michael Luo</strong>,
               Stefano Carpin, Joshua Viers, Stavros Vougioukas, Ken Goldberg
               <br>
-              <em>Under Review at International Conference on Robotics and Automation (ICRA) 2021.</em>
+              <em>International Conference on Robotics and Automation (<strong>ICRA</strong>), 2021</em>
               <br>
               <a href="http://alphagarden.org/">Website</a> |
-              <a href="https://drive.google.com/file/d/1aDfWkznPHM5c9eedJhdXy3DB1F9r8pmq/view?usp=sharing">Paper</a> |
+              <a href="https://ieeexplore.ieee.org/document/9561431">Paper</a> |
               <a href="https://github.com/BerkeleyAutomation/AlphaGarden">Code</a> 
               <br>
               <p></p>
